@@ -352,11 +352,41 @@
         </section>
       </div>
     </footer>
-    <div class="popup-map">
+
+    <div class="popup-map visually-hidden">
+      <iframe src="https://www.google.com/maps" width="" heigt="">
+
+      </iframe>
+      <button type="button" class="popup-close"></button>
     </div>
 
     <form action="post" class="popup hidden">
+      <div class="form__container">
+        <div class="form__row">
+          <div class="form__container--input">
+            <label for="username">Ваше имя:</label>
+            <input type="text" class="form-input" name="username" id="username" placeholder="Имя Фамилия">
+          </div>
 
+          <div class="form__container--input">
+            <label for="username">Ваш e-mail:</label>
+            <input type="email" class="form-input" name="user_email" id="user_email" placeholder="email@example.com">
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__container--input">
+            <label for="user_message">Текст письма:</label>
+            <textarea class="form-input" name="user_message" id="user_message">
+              В свободной форме
+            </textarea>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <button type="submit" class="form__btn">Отправить</button>
+        </div>
+      </div>
     </form>
   </body>
 </html>
